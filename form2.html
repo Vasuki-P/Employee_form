@@ -1,0 +1,85 @@
+<!-- form2.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details Form - Part 2</title>
+    <style>
+        body{
+            background-color:rgb(102, 165, 173);
+        }
+        h1{
+            text-align: center;
+        }
+        .box{
+            border: 2px solid black;
+            padding: 30px;
+            margin-top: 50px;
+            margin-left: 80vh;
+            width: 30%;
+            background-color:rgb(196, 223, 230);
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .input_field{
+            height: 20px;
+            width: 100%;
+        }
+        .input_fields{
+            height: 30px;
+            width: 100%;
+        }
+        .box .btn {
+            padding: 10px 20px;
+            width: 120px;
+            font-size: 15px;
+            background-color: rgb(5, 145, 220);
+            border: 1px solid black;
+            margin: 0 3px;
+            border-radius: 5px; 
+        }
+        .box .btn:hover{
+            cursor: pointer;
+            background-color: rgb(113, 186, 234);
+        }
+        .box label{
+            font-size: 20px;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <h1>Employee Details Form - Page 2</h1>
+    <div class="box">
+        <form method="POST" action="/process">
+            <div>
+                <label for="address">Address</label>
+                <input class="input_field" type="text" name="address" id="address" required />
+            </div>
+            <div>
+                <label for="phone">Phone Number</label>
+                <input class="input_field" type="text" name="phone" id="phone" required />
+            </div>
+            <div>
+                <label for="emergency_contact">Emergency Contact Number</label>
+                <input class="input_field" type="text" name="emergency_contact" id="emergency_contact" required />
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input class="input_field" type="email" name="email" id="email" required />
+            </div>
+            <div>
+                <label for="joining_date">Joining Date</label>
+                <input class="input_field" type="date" name="joining_date" id="joining_date" required />
+            </div><br>
+            <div>
+                <input class="btn" type="submit" value="Submit" />
+            </div>
+        </form>
+</div>
+</body>
+</html>

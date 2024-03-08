@@ -1,0 +1,99 @@
+<!-- form1.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details Form- part1</title>
+    <style>
+        body{
+            background-color: rgb(102, 165, 173);
+        }
+        h1{
+            text-align: center;
+        }
+        .box label{
+            font-size: 20px;
+            color: #000;
+        }
+        .box{
+            border: 2px solid black;
+            padding: 30px;
+            margin-left: 80vh;
+            width: 30%;
+            background-color:  rgb(196, 223, 230);
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .input_field{
+            height: 20px;
+            width: 100%;
+        }
+        .input_fields{
+            height: 30px;
+            width: 100%;
+        }
+        .box .btn {
+            padding: 10px 20px;
+            width: 120px;
+            font-size: 15px;
+            background-color: rgb(5, 145, 220);
+            border: 1px solid black;
+            margin: 0 3px;
+            border-radius: 5px; 
+        }
+        .box .btn:hover{
+            cursor: pointer;
+            background-color: rgb(113, 186, 234);
+        }
+    </style>
+</head>
+<body>
+    <h1 >Employee Details Form</h1>
+    <div class="box">
+        <form method="POST" action="/next">
+            <div>
+                <label for="employee_name">Employee Name</label>
+                <input class="input_field" type="text" name="employee_name" id="employee_name" required />
+            </div>
+            <div>
+                <label for="employee_id">Employee ID</label>
+                <input class="input_field" type="text" name="employee_id" id="employee_id" required />
+            </div>
+            <div>
+                <label for="department">Department</label>
+                <select class="input_fields" name="department" id="department" required>
+                    <option value="IT">IT</option>
+                    <option value="HR">HR</option>
+                    <option value="Finance">Finance</option>
+                    <option value="Operations">Operations</option>
+                </select>
+            </div>
+            <div>
+                <label for="dob">Date of Birth</label>
+                <input class="input_field" type="text" name="dob" id="dob" required />
+            </div>
+            <div>
+                <label>Gender</label><br />
+                <label><input type="radio" name="gender" value="male" required> Male</label><br />
+                <label><input type="radio" name="gender" value="female" required> Female</label><br />
+                <label><input type="radio" name="gender" value="other" required> Other</label>
+            </div>
+            <div>
+                <label for="designation">Designation</label>
+                <input class="input_field" type="text" name="designation" id="designation" required />
+            </div>
+            <div>
+                <label for="salary">Salary</label>
+                <input class="input_field" type="text" name="salary" id="salary" required />
+            </div><br>
+            <div>
+                <input class="btn" type="submit" value="Next" />
+            </div>
+        </form>
+    </div>
+</body>
+</html>
